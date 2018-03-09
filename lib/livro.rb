@@ -1,5 +1,6 @@
 # coding: utf-8
 class Livro
+    attr_accessor :preco
     def initialize(autor, isbn="1", numero_de_paginas, preco)
         @autor = autor
         @isbn = isbn
@@ -7,9 +8,15 @@ class Livro
         @preco = preco     
     end
 
+=begin
     def preco
         @preco
     end
+
+    def preco=(preco)
+        @preco = preco
+    end
+=end
 
     def to_s
         "Autor: #{@autor}, Isbn: #{@isbn}, Páginas: #{@numero_de_paginas}"
