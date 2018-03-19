@@ -1,0 +1,24 @@
+--- !ruby/object:Livro
+titulo: Titulo 1
+autor: Gladstone
+isbn: '112233'
+numero_de_paginas: 330
+preco: 498.9
+categoria: :testehash1
+
+--- !ruby/object:Livro
+titulo: Titulo 1
+autor: Gladstone
+isbn: '112233'
+numero_de_paginas: 290
+preco: 187.3
+categoria: :testehash1
+
+--- !ruby/object:Livro
+titulo: A Ira dos Anjos
+autor: Sidney Sheldon
+isbn: '1'
+numero_de_paginas: 400
+preco: 320.4
+categoria: :testehash1
+
