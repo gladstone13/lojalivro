@@ -1,14 +1,16 @@
 # coding: utf-8
-class Livro
-    attr_accessor :preco
-    attr_reader :categoria, :isbn, :autor, :titulo
+class Livro < Midia
+    include FormatadorMoeda
     
-    def initialize(titulo, autor, isbn="1", numero_de_paginas, preco, categoria)
+    attr_reader :categoria, :autor
+    
+    def initialize(titulo, autor, isbn="1", numero_de_paginas, valor, categoria)
+        super()
         @titulo = titulo
         @autor = autor
         @isbn = isbn
         @numero_de_paginas = numero_de_paginas 
-        @preco = preco  
+        @valor = valor  
         @categoria = categoria   
     end
 
@@ -16,6 +18,7 @@ class Livro
         "Autor: #{@autor}, Isbn: #{@isbn}, Páginas: #{@numero_de_paginas}, Categoria: #{@categoria}"
     end
 
+=begin
     def eql?(outro_livro)
         @isbn == outro_livro.isbn
     end
@@ -23,4 +26,6 @@ class Livro
     def hash
         @isbn.hash
     end
+=end
+
 end
