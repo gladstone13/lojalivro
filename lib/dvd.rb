@@ -1,4 +1,6 @@
-class DVD < Midia
+class DVD < VendaFacil::Midia
+
+    attr_reader :categoria
 
     def initialize(titulo, valor, categoria)
         super()

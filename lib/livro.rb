@@ -1,5 +1,6 @@
 # coding: utf-8
-class Livro < Midia
+
+class Livro < VendaFacil::Midia
     include FormatadorMoeda
     
     attr_reader :categoria, :autor

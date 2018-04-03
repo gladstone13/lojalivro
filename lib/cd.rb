@@ -1,5 +1,7 @@
-class CD < Midia
+class CD < VendaFacil::Midia
     
+    attr_reader :categoria
+
     def initialize(titulo, valor, categoria)
         super()
         @titulo = titulo

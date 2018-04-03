@@ -1,0 +1,24 @@
+--- !ruby/object:CD
+desconto: 0.1
+valor: 30.8
+titulo: Appetite For Destruction
+categoria: :disco
+
+--- !ruby/object:DVD
+desconto: 0.1
+valor: 90.3
+titulo: Metallica S&M
+categoria: :dvd
+
+--- !ruby/object:Livro
+desconto: 0.1
+valor: 79.3
+titulo: Deuses Americanos
+autor: Neil Gaiman
+isbn: '112233'
+numero_de_paginas: 450
+categoria: :livro
+
+--- !ruby/object:VendaFacil::Revista
+titulo: Veja
+
